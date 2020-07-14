@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/news-app",
+            "outputPath": "dist/marketing-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,18 +71,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "news-app:build"
+            "browserTarget": "marketing-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "news-app:build:production"
+              "browserTarget": "marketing-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "news-app:build"
+            "browserTarget": "marketing-app:build"
           }
         },
         "test": {
@@ -119,15 +119,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "news-app:serve"
+            "devServerTarget": "marketing-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "news-app:serve:production"
+              "devServerTarget": "marketing-app:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "news-app"
+  "defaultProject": "marketing-app"
 }
