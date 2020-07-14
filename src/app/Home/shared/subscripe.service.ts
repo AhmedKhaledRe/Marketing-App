@@ -14,7 +14,7 @@ export class SubscripeService {
   }
 
   public priceSubscripe(Data: any): Observable<any> {
-    return this.http.post('/api/v1/users/auth', Data);
+    return this.http.post('https://example.com/api/subscribe', Data);
   }
 
 }
