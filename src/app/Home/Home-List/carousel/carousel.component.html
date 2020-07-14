@@ -1,10 +1,47 @@
-<section>
+ <section class="section-style">
   <div class="carousel-box position-relative">
     <div class="position-absolute carousel-center">
 
       <div>
         <h1 class="carousel-center-head">Our Pricing</h1>
       </div>
+
+          <div class="row pt-5 text-center">
+
+            <form class="col-lg-4 col-md-4 col-sm-12 p-5" [formGroup]="subscripForm" (ngSubmit)="subscrip()" >
+             <input class=" d-none" id="value" formControlName="value" value="gold">
+              <div class="card border-0 shadow">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Gold Package</h5>
+                  <p class="card-text lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
+                  <button type="submit" class="btn btn-sm rounded-pill">SEE MORE</button>
+                </div>
+              </div>
+            </form>
+
+            <form class="col-lg-4 col-md-4 col-sm-12 p-5" [formGroup]="subscripForm" (ngSubmit)="subscrip()" >
+              <input class=" d-none" id="value" formControlName="value" value="platinum">
+              <div class="card border-0 shadow">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Platinum Package</h5>
+                  <p class="card-text lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
+                  <button type="submit" class="btn btn-sm rounded-pill">SEE MORE</button>
+                </div>
+              </div>
+            </form>
+
+            <form class="col-lg-4 col-md-4 col-sm-12 p-5" [formGroup]="subscripForm" (ngSubmit)="subscrip()" >
+              <input class=" d-none" id="value" formControlName="value" value="silver">
+              <div class="card border-0 shadow">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Silver Package</h5>
+                  <p class="card-text lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
+                  <button type="submit" class="btn btn-sm rounded-pill">SEE MORE</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
 
     </div>
   </div>

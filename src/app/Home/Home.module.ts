@@ -11,8 +11,8 @@ import { HomeComponent } from './Home.component';
 import { CarouselComponent } from './Home-List/carousel/carousel.component';
 import { OfferComponent } from './Home-List/offer/offer.component';
 import { WhoWeAreComponent } from './Home-List/who-we-are/who-we-are.component';
-import { PricingComponent } from './Home-List/pricing/pricing.component';
 import { SubscripeNewsComponent } from './Home-List/subscripe-news/subscripe-news.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { path: 'home' , component: HomeComponent}
@@ -25,14 +25,14 @@ const routes: Routes = [
     CarouselComponent,
     OfferComponent,
     WhoWeAreComponent,
-    PricingComponent,
     SubscripeNewsComponent,
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     SubscripeService,

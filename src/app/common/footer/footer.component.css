@@ -18,6 +18,11 @@
   left: 15%;
 }
 
+.footer-back{
+  background: url(src/assets/img/MaskGroup1.svg) no-repeat;
+  height: auto;
+  width: auto;
+}
 
 img {
   width: auto;

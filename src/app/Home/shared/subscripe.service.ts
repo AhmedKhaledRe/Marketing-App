@@ -11,7 +11,10 @@ export class SubscripeService {
 
   public getOffers(): Observable<any> {
     return this.http.get('/assets/data/offer.json');
+  }
 
+  public priceSubscripe(Data: any): Observable<any> {
+    return this.http.post('/api/v1/users/auth', Data);
   }
 
 }
