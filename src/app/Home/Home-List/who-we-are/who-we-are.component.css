@@ -1,0 +1,49 @@
+.section-style{
+  padding: 50px 20px 200px 20px;
+}
+
+.btn{
+  background: linear-gradient(90deg, rgb(26, 18, 159,1) 70%, rgb(81, 86, 249,1) 100%);
+  width: 150px;
+  height: 40px;
+  color: white;
+  position: absolute;
+  left: 50px;
+}
+
+.who-text-box {
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 500px;
+}
+
+.who-text-box .lead {
+  width: 550px;
+}
+
+.center {
+  top: 5%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  position: absolute;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .section-style{
+    margin: 0px 0px 200px 0px;
+  }
+
+  .who-text-box .lead{
+    width: 300px;
+  }
+
+  .who-text-box h1{
+    width: 300px;
+  }
+}

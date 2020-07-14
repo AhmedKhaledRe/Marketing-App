@@ -1,0 +1,54 @@
+
+.news-box {
+  height: 400px;
+  width: auto;
+}
+
+.news-center {
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+
+.news-center-first {
+  font-weight: 100;
+}
+
+.news-center-special{
+  font-weight: 600;
+}
+
+
+input[type=text] {
+  width: 450px;
+  border: 0px;
+  height: 52px;
+  padding-left: 30px;
+  color: #ccc;
+  opacity: 0.5;
+  background-color: whitesmoke;
+  border-radius: 50px;
+}
+
+.subscribe-btn{
+  width: 170px;
+  height: 52px;
+  background: linear-gradient(90deg, rgb(26, 18, 159,1) 70%, rgb(81, 86, 249,1) 100%);
+  color: white;
+}
+
+@media (max-width: 767px) {
+  input[type=text] {
+    width: 300px;
+  }
+
+  .subscribe-btn{
+    width: 150;
+  }
+  .news-center {
+    width: 400px;
+    top: 15%;
+    float: right;
+    margin-left: 100px;
+  }
+}

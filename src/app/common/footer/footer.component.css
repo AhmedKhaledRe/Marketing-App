@@ -1,0 +1,31 @@
+.footer-logo
+{
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.footer-stay{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.center {
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  position: absolute;
+  left: 15%;
+}
+
+
+img {
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 500px) {
+  img {
+    width: auto;
+  }
+}

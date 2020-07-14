@@ -1,0 +1,24 @@
+<section class="section-style">
+  <div class="pb-5">
+    <h1 class="offer-container-head">What We Offer</h1>
+    <div class="offer-style">
+      <div class="p-5">
+        <div class="row pt-5">
+          <div class="col-lg-4 col-md-6 p-5" *ngFor="let offer of offers">
+            <div class="card border-0 shadow">
+              <div class="row">
+                <img class="card-img-top col mt-4" src="{{offer.img}}" alt="">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title mt-3">{{ offer.title }}</h5>
+                <p class="card-text">{{ offer.text }}</p>
+                <button class="btn btn-sm rounded-pill">SEE MORE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </div>
+</div>
+</section>
