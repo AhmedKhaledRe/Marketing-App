@@ -110,19 +110,13 @@
   .footer-links,
   .footer-contacts
   {
-    width: 180px;
+    width: 170px;
   }
 
-  @media(max-width: 450px){
-    .center{
-      left: 5%;
-      padding-left: 30px;
-    }
-
-    .footer-links,
-    .footer-contacts
-    {
-      width: 150px;
-    }
+  .center{
+    left: 5%;
+    padding-left: 20px;
   }
+
 }
+

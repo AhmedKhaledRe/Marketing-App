@@ -63,13 +63,9 @@ input[type=text] {
     width: 250px;
   }
 
-  .subscribe-btn{
-    width: 100;
-  }
-
   .news-center-first{
     width: 300px;
     font-size: 40px;
-    margin-left: 70px;
+    margin-left: 60px;
   }
 }
