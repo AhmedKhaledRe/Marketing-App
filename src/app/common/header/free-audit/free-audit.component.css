@@ -4,8 +4,7 @@
 }
 
 .header-below-text{
-  padding-left: 400px;
-  padding-top: 100px;
+  margin-top: 100px;
 }
 
 .header-below-text-2{
@@ -64,7 +63,7 @@
 
 @media (max-width: 767px) {
   .header-below-img{
-    margin: 100px 0px 0px 50px;
+    margin: 70px 0px 0px 50px;
     padding: 0px 0px 0px 0px;
     width: 318px;
     height:500px
