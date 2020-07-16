@@ -20,6 +20,7 @@
 .card{
   height: 410px;
   border-radius: 30px;
+  margin-bottom: 100px;
 }
 
 .card-text{
@@ -27,13 +28,19 @@
   font-size: 15px;
 }
 
+.offer-row
+{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .btn{
   background: linear-gradient(90deg, rgb(26, 18, 159,1) 70%, rgb(81, 86, 249,1) 100%);
   width: 100px;
   color: white;
   position: absolute;
-  right:    40px;
-  bottom:   20px;
+  right: 40px;
+  bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -54,7 +61,7 @@
   }
 
   div.row,
-  div.col-lg-4.col-md-6.p5
+  .offer-row
   {
     width: 350px;
   }

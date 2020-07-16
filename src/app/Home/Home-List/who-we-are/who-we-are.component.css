@@ -60,7 +60,7 @@ img {
   .who-text-box .lead {
     width: 300px;
     height: 300px;
-    overflow: hidden;
+    overflow: auto;
   }
 
   .who-text-box h1{
