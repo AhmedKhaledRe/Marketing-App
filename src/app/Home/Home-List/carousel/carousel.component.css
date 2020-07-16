@@ -56,9 +56,15 @@
   }
 }
 
-@media (max-width: 764px){
+@media (max-width: 767px){
   .section-style{
     margin-bottom: 900px;
+  }
+
+  div.row.pt-5.text-center,
+  div.card.border-0.shadow
+  {
+    width: 350px;
   }
 }
 

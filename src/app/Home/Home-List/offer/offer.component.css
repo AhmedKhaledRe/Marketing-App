@@ -51,8 +51,15 @@
     background: none;
   }
 
+  div.row,
+  div.col-lg-4.col-md-6.p5
+  {
+    width: 350px;
+  }
+
   .card-text{
-    height: 20px;
+    height: 100px;
     font-size: 14px;
+    overflow: hidden;
   }
 }

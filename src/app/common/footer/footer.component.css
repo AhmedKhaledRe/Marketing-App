@@ -1,7 +1,14 @@
+.section-style{
+  background: url(src/assets/img/MaskGroup1.svg);
+  height: 570px;
+  background-position: bottom center;
+}
+
 .footer-logo
 {
   font-size: 40px;
   font-weight: 400;
+  padding-left: 30px;
 }
 
 .footer-stay{
@@ -10,27 +17,112 @@
 }
 
 .center {
-  top: 40%;
+  top: 45%;
   width: 100%;
-  text-align: center;
   font-size: 18px;
   position: absolute;
-  left: 15%;
 }
 
-.footer-back{
-  background: url(src/assets/img/MaskGroup1.svg) no-repeat;
-  height: auto;
-  width: auto;
+.footer-links div,
+.footer-contacts div
+{
+  padding-bottom: 4px;
+  font-weight: 400;
 }
 
-img {
-  width: auto;
-  height: auto;
+.footer-links h5,
+.footer-contacts h5,
+.footer-hours h5
+{
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 25px;
 }
 
-@media (max-width: 500px) {
-  img {
-    width: auto;
+@media(max-width: 1000px){
+  .footer-logo{
+    font-size: 30px;
+
+  }
+
+  .footer-stay{
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .footer-links div,
+  .footer-contacts div
+  {
+    padding-bottom: 2px;
+    font-weight: 100;
+  }
+}
+
+@media(max-width: 991px){
+  .center{
+    top: 40%;
+    padding-right: 200px;
+  }
+
+  .footer-logo
+  {
+    font-size: 40px;
+    font-weight: 400;
+    padding-left: 30px;
+  }
+
+  .footer-stay{
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
+
+
+@media(max-width: 855px){
+  .center{
+    padding-right: 100px;
+    padding-left: 50px;
+  }
+}
+
+@media(max-width: 767px){
+  .center{
+    top: 25%;
+    left: 2%;
+  }
+}
+
+@media(max-width: 575px){
+  .center{
+    top: 30%;
+    left: 2%;
+    padding-right: 0px;
+    padding-left: 50px;
+  }
+
+  .footer-links,
+  .footer-contacts{
+    width: 200px;
+  }
+}
+
+@media(max-width: 450px){
+  .footer-links,
+  .footer-contacts
+  {
+    width: 180px;
+  }
+
+  @media(max-width: 450px){
+    .center{
+      left: 5%;
+      padding-left: 30px;
+    }
+
+    .footer-links,
+    .footer-contacts
+    {
+      width: 150px;
+    }
   }
 }
