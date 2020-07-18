@@ -1,19 +1,30 @@
 .carousel-box {
-  height: 818px;
-  background-color: whitesmoke;
-  width: auto;
+  height: 700px;
+  background-color: rgb(126, 118, 249, 0.15);
 }
 
 .carousel-center{
   top: 10%;
   width: 100%;
   text-align: center;
+  position: absolute;
 }
 
 .carousel-center-head{
   opacity: 0.8;
   font-weight: 700;
   font-size: 50px;
+}
+
+.carousel-main{
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.item{
+  width: 350px;
+  margin: auto;
 }
 
 .card{
@@ -26,7 +37,7 @@
   width: auto;
   max-width: 400px;
   font-size: 15px;
-  margin-top: 70px;
+  margin-top: 30px;
   overflow: auto;
 }
 
@@ -35,12 +46,18 @@
   font-weight: 300;
 }
 
-.btn{
+.price{
+  margin-right: 10%;
+  color: #1000FF;
+  font-weight: 700;
+}
+
+button{
   background: linear-gradient(90deg, rgb(26, 18, 159,1) 70%, rgb(81, 86, 249,1) 100%);
   width: 100px;
   color: white;
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   right:  50%;
 }
 
@@ -51,15 +68,12 @@
     overflow: auto;
   }
 
-  .btn{
+  button{
     right:40%
   }
 }
 
 @media (max-width: 767px){
-  .section-style{
-    margin-bottom: 900px;
-  }
 
   div.row.pt-5.text-center,
   div.card.border-0.shadow
@@ -68,8 +82,12 @@
   }
 
   .card-text{
-    height: 400px;
+    height: 170px;
   }
 }
 
-
+@media (max-width: 450px){
+  .carousel-box {
+    width: 450px;
+  }
+}

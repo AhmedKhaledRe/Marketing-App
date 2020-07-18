@@ -1,47 +1,58 @@
- <section class="section-style">
+<section>
   <div class="carousel-box position-relative">
-    <div class="position-absolute carousel-center">
+    <div class="carousel-center">
 
       <div>
         <h1 class="carousel-center-head">Our Pricing</h1>
       </div>
 
-          <div class="row pt-5 text-center">
+      <div class="carousel-main">
+        <owl-carousel [options]="slideOptions" [carouselClasses]="['owl-theme', 'sliding']" #owlElement>
 
-            <form class="col-lg-4 col-md-4 col-sm-12 p-5 " [formGroup]="subscripForm" (ngSubmit)="subscrip()" >
-             <input class=" d-none" id="value" formControlName="value" value="gold">
-              <div class="card border-0 shadow">
-                <div class="card-body">
-                  <h5 class="card-title mt-3">Gold Package</h5>
-                  <p class="card-text lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
-                  <button type="submit" class="btn btn-sm rounded-pill">SEE MORE</button>
+          <div class="item">
+              <form [formGroup]="subscripFormGold" (ngSubmit)="subscripGold()" >
+                <input class=" d-none" formControlName="value">
+                <div class="card border-0 shadow">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3">Gold Package</h5>
+                    <p class="card-text lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
+                    <h2 class="price">$ 200</h2>
+                    <button type="submit" class="btn btn-sm rounded-pill">See Details</button>
+                  </div>
                 </div>
-              </div>
-            </form>
+              </form>
+          </div>
 
-            <form class="col-lg-4 col-md-4 col-sm-12 p-5 " [formGroup]="subscripForm" (ngSubmit)="subscrip()" >
-              <input class=" d-none" id="value" formControlName="value" value="platinum">
+          <div class="item">
+            <form [formGroup]="subscripFormPlatinum" (ngSubmit)="subscripPlatinum()" >
+              <input class=" d-none" formControlName="value">
               <div class="card border-0 shadow">
                 <div class="card-body">
                   <h5 class="card-title mt-3">Platinum Package</h5>
                   <p class="card-text lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
-                  <button type="submit" class="btn btn-sm rounded-pill">SEE MORE</button>
+                  <h2 class="price">$ 300</h2>
+                  <button type="submit" class="btn btn-sm rounded-pill">See Details</button>
                 </div>
               </div>
             </form>
-
-            <form class="col-lg-4 col-md-4 col-sm-12 p-5 " [formGroup]="subscripForm" (ngSubmit)="subscrip()" >
-              <input class=" d-none" id="value" formControlName="value" value="silver">
-              <div class="card border-0 shadow">
-                <div class="card-body">
-                  <h5 class="card-title mt-3">Silver Package</h5>
-                  <p class="card-text lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
-                  <button type="submit" class="btn btn-sm rounded-pill">SEE MORE</button>
-                </div>
-              </div>
-            </form>
-
           </div>
+
+          <div class="item">
+              <form [formGroup]="subscripFormSilver" (ngSubmit)="subscripSilver()" >
+                <input class=" d-none" formControlName="value">
+                <div class="card border-0 shadow">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3">Silver Package</h5>
+                    <p class="card-text lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.</p>
+                    <h2 class="price">$ 100</h2>
+                    <button type="submit" class="btn btn-sm rounded-pill">See Details</button>
+                  </div>
+                </div>
+              </form>
+          </div>
+
+        </owl-carousel>
+      </div>
 
     </div>
   </div>

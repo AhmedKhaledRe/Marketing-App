@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { OwlModule } from 'ngx-owl-carousel';
 
 import { SubscripeService } from './shared/subscripe.service';
 import { HomeListComponent } from './Home-List/Home-List.component';
@@ -32,7 +33,8 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    OwlModule
   ],
   providers: [
     SubscripeService,

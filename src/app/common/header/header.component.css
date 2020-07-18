@@ -29,6 +29,12 @@
   }
 
   .navbar-nav{
-    padding-left: 70%;
+    padding-left: 70px;
+  }
+}
+
+@media (max-width: 450px){
+  .section-back{
+    width: 450px;
   }
 }
